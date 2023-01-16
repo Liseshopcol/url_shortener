@@ -172,7 +172,7 @@ function cut(myurl){
       headers: {'public-api-token':'7cb9068912099997fc9ee5eb211d827e'},
   success: function(result) {
           console.log(result);
-	  document.getElementById("recortada").innerHTML = (result);
+	  document.getElementById("recortada").innerHTML = (result.shortenedUrl);
       },
       error: function(request,msg,error) {
            console.log(error);
