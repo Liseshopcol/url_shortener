@@ -171,7 +171,7 @@ function cut(myurl){
   },
       headers: {'public-api-token':'7cb9068912099997fc9ee5eb211d827e'},
   success: function(result) {
-          console.log(result);
+          document.getElementById("recortada").innerHTML=(result);
       },
       error: function(request,msg,error) {
            console.log(error);
@@ -180,11 +180,7 @@ function cut(myurl){
 
 }
 </script>
-</script>
-<h5 class="card-title">Tu URL Recortada</h5>
-<script type="text/javascript">
-    document.write(result())
-</script>
+<h5 class="card-title">Tu URL Recortada: </h5><div id="recortada"
                 </div><!-- End activity item-->
 
                 
