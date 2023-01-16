@@ -171,16 +171,17 @@ function cut(myurl){
   },
       headers: {'public-api-token':'7cb9068912099997fc9ee5eb211d827e'},
   success: function(result) {
-          document.getElementById("recortada").innerHTML=(result);
+          console.log(result);
       },
       error: function(request,msg,error) {
            console.log(error);
       }
+	  document.getElementById("recortada").innerHTML = cut(result);
   }); 
 
 }
 </script>
-<h5 class="card-title">Tu URL Recortada: </h5><div id="recortada"
+<h5 class="card-title">Tu URL Recortada es: </h5><div id="recortada"></div>
                 </div><!-- End activity item-->
 
                 
