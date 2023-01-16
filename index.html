@@ -172,11 +172,12 @@ function cut(myurl){
       headers: {'public-api-token':'7cb9068912099997fc9ee5eb211d827e'},
   success: function(result) {
           console.log(result);
+	  document.getElementById("recortada").innerHTML = (result);
       },
       error: function(request,msg,error) {
            console.log(error);
       }
-	  document.getElementById("recortada").innerHTML = cut(result);
+	  
   }); 
 
 }
